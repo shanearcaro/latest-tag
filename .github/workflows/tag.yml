@@ -1,17 +1,20 @@
 name: Keep Latest Tag
 
-on: 
-  push: 
-    branches: 
+on:
+  push:
+    branches:
       - main
 
 jobs:
   keep-latest-tag:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: keep tag
         run: |
           git tag --delete latest
           git tag latest
           git push --tags
-      
