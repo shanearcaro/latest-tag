@@ -20,6 +20,6 @@ jobs:
           if ! git tag --delete latest 2>/dev/null; then
             echo "Latest tag not found"
           fi
-          git push --delete latest
+          git push --delete origin latest
           git tag latest
           git push --tags
