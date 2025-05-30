@@ -1,0 +1,7 @@
+{
+  "name": "latest-tag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Shane Arcaro <smarcaro@gmail.com>",
+  "license": "MIT"
+}
